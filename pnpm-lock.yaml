@@ -3,6 +3,7 @@ importers:
     dependencies:
       '@testing-library/react': registry.npmjs.org/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
       core-js: registry.npmjs.org/core-js/3.16.0
+      qrcode.react: registry.npmjs.org/qrcode.react/1.0.1_react@17.0.2
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     devDependencies:
@@ -21,6 +22,7 @@ importers:
       '@types/react-dom': ^17.0.9
       '@types/testing-library__jest-dom': 5.9.5
       core-js: ^3.16.0
+      qrcode.react: 1.0.1
       react: ^17.0.2
       react-dom: ^17.0.2
   component:
@@ -586,6 +588,42 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/pretty-format/-/pretty-format-27.0.6.tgz
     version: 27.0.6
+  registry.npmjs.org/prop-types/15.7.2:
+    dependencies:
+      loose-envify: registry.npmjs.org/loose-envify/1.4.0
+      object-assign: registry.npmjs.org/object-assign/4.1.1
+      react-is: registry.npmjs.org/react-is/16.13.1
+    dev: false
+    name: prop-types
+    resolution:
+      integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz
+    version: 15.7.2
+  registry.npmjs.org/qr.js/0.0.0:
+    dev: false
+    name: qr.js
+    resolution:
+      integrity: sha1-ys6GOG9ZoNuAUPqQ2baw6IoeNk8=
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/qr.js/-/qr.js-0.0.0.tgz
+    version: 0.0.0
+  registry.npmjs.org/qrcode.react/1.0.1_react@17.0.2:
+    dependencies:
+      loose-envify: registry.npmjs.org/loose-envify/1.4.0
+      prop-types: registry.npmjs.org/prop-types/15.7.2
+      qr.js: registry.npmjs.org/qr.js/0.0.0
+      react: registry.npmjs.org/react/17.0.2
+    dev: false
+    id: registry.npmjs.org/qrcode.react/1.0.1
+    name: qrcode.react
+    peerDependencies:
+      react: ^15.5.3 || ^16.0.0 || ^17.0.0
+    resolution:
+      integrity: sha512-8d3Tackk8IRLXTo67Y+c1rpaiXjoz/Dd2HpcMdW//62/x8J1Nbho14Kh8x974t9prsLHN6XqVgcnRiBGFptQmg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/qrcode.react/-/qrcode.react-1.0.1.tgz
+    version: 1.0.1
   registry.npmjs.org/react-dom/17.0.2_react@17.0.2:
     dependencies:
       loose-envify: registry.npmjs.org/loose-envify/1.4.0
@@ -602,6 +640,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz
     version: 17.0.2
+  registry.npmjs.org/react-is/16.13.1:
+    dev: false
+    name: react-is
+    resolution:
+      integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz
+    version: 16.13.1
   registry.npmjs.org/react-is/17.0.2:
     name: react-is
     resolution:

@@ -1,22 +1,15 @@
 ---
 description: 'A QrLink component.'
-labels: ['label1', 'label2', 'label3']
+labels: ['qr', 'qrcode', 'link']
 ---
 
 import { QrLink } from './qr-link';
 
-## React Component for rendering text
+## React Component for rendering a linkable QR code
 
-A basic div that renders some text
+A QR code generated from a URL
 
 ### Component usage
 ```js
-<QrLink text="hello from QrLink" />
-```
-
-### Using props to customize the text
-
-Modify the text to see it change live:
-```js live
-<QrLink text="hello from QrLink" />
+<QrLink url="http://facebook.github.io/react/" />
 ```

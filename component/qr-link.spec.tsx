@@ -1,9 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { BasicQrLink } from './qr-link.composition';
+import { UrlGeneratedQrlink } from './qr-link.composition';
 
-it('should render with the correct text', () => {
-  const { getByText } = render(<BasicQrLink />);
-  const rendered = getByText('hello from QrLink');
-  expect(rendered).toBeTruthy();
+const ReactLink = "http://facebook.github.io/react/";
+
+it('should render with the correct link', () => {
+  const { getByTestId } = render(<UrlGeneratedQrlink />);
+  const rendered = getByTestId("qr-link");
+  expect(rendered.firstElementChild).toHaveAttribute('href', ReactLink)
 });

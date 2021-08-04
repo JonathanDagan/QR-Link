@@ -1,16 +1,20 @@
 import React from 'react';
+import QRCode from "qrcode.react";
 
 export type QrLinkProps = {
   /**
    * a text to be rendered in the component.
    */
-  text: string
+  url: string
 };
 
-export function QrLink({ text }: QrLinkProps) {
+
+export function QrLink({ url }: QrLinkProps) {
   return (
-    <div>
-      {text}
+    <div data-testid="qr-link">
+      <a href={url}>
+        <QRCode value={url} />
+      </a>
     </div>
   );
 }
