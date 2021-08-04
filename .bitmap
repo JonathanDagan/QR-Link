@@ -2,8 +2,8 @@
 
 {
     "utils/qr-link": {
-        "scope": "",
-        "version": "",
+        "scope": "jonathandagan.utils",
+        "version": "0.1.0",
         "mainFile": "index.ts",
         "rootDir": "component"
     },
