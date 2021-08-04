@@ -22,7 +22,7 @@
      * scope - scope name only, e.g. 'compilation'.
      * owner - owner name in bit.dev, e.g. 'teambit'.
      **/
-    "defaultDirectory": "{scope}/{name}",
+    "defaultDirectory": "component",
     /**
      * default scope for all components in workspace.
      **/
@@ -37,7 +37,9 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@testing-library/react": "12.0.0"
+      },
       "peerDependencies": {
         "@testing-library/react": "12.0.0",
         "react": "17.0.2",
